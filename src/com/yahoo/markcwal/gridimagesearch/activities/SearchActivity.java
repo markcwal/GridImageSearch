@@ -110,6 +110,17 @@ public class SearchActivity extends Activity {
 		AsyncHttpClient client = new AsyncHttpClient();
 		String searchUrl = "https://ajax.googleapis.com/ajax/services/search/images?q=" + query + "&v=1.0&rsz=8";
 		
+		//added so it resets counters on new search
+		gvResults.setOnScrollListener(new EndlessScrollListener() {
+		    @Override
+		    public void onLoadMore(int page, int totalItemsCount) {
+	                // Triggered only when new data needs to be appended to the list
+	                // Add whatever code is needed to append new items to your AdapterView
+		        customLoadMoreDataFromApi(totalItemsCount); 
+	                // or customLoadMoreDataFromApi(totalItemsCount); 
+		    }
+	        });
+		
 		searchUrl = modifySearchUrl(searchUrl);
 		
 		client.get(searchUrl, new JsonHttpResponseHandler() {
