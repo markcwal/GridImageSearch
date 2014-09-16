@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GridImageSearch</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title">Advanced Search Options</string>
+    <string name="image_size">Image Size</string>
+    <string name="color_filter">Color Filter</string>
+    <string name="type">Image Type</string>
+    <string name="site">Site Filter</string>
+    <string name="example">www.example.com</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Enter image search</string>
+    <string name="image_title">Image Title</string>
+    <string name="image_result">Image Result</string>
+    <string name="title_activity_image_display">Full Image</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
